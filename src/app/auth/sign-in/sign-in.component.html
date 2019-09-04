@@ -1,0 +1,14 @@
+<mat-card>
+<mat-card-title class="login-title">Authorization</mat-card-title>
+<mat-card-content>
+    <form class="login-form" [formGroup]="form" (submit)="login()">
+        <mat-form-field class="form-field" appearance="standard">
+            <input matInput placeholder="E-mail" formControlName="email" />
+        </mat-form-field>
+        <mat-form-field class="form-field" appearance="standard">
+            <input type="password" matInput placeholder="password" formControlName="password" />
+        </mat-form-field>
+        <button type="submit" mat-raised-button color="primary">Enter</button>
+    </form>
+</mat-card-content>
+</mat-card>
